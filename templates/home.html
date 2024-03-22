@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style media="screen">
+    body{
+        background-color: #080710;
+    }
+    h1{
+        color: orange;
+        text-align: center;
+    }
+    label{
+        color: #ffffff;
+        text-align: left;
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    input{
+        margin-top: 50px;
+        height: 50px;
+        width: 30%;
+        background-color: orange;
+        color: black;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    form{
+            height: 300px;
+            width: 600px;
+            background-color: rgba(255,255,255,0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 50px 35px;
+            border-color: orange;
+    }
+    textarea{
+        display: block;
+        height: 90px;
+        width: 100%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        box-sizing: border-box;
+        margin-bottom: 26px;
+        padding: 4px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid orange;
+        transition: 0.2s ease;
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+    <br>
+    <h1>Sentimental Analysis on FlipKart Product Review Predictor</h1><br><br>
+    <form action="/prediction" method="post">
+        <label for="test_string">Enter the product review</label>
+        <textarea id="test_string" name="test_string" rows="4" cols="50" placeholder="enter your review here..." required></textarea>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
